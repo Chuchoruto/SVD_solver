@@ -183,6 +183,7 @@ def main():
     print(f'Elongation vector: \n{e}')
     print(f'Internal Forces: \n{w}')
 
+    print(f'Singular value matrix:\n {sigma}')
     print(f'The Stiffness Matrix has condition number: {condition_number}')
 
 
