@@ -2,8 +2,8 @@
 
 #### Files Included
 
-`svd_solver.py` : Includes a Custom SVD decomposition function
-`equlibrium.py` : Includes all necessary functions to solve the two spring-mass systems prescribed
+`svd_solver.py` : Includes a Custom SVD decomposition function |
+`equlibrium.py` : Includes all necessary functions to solve the two spring-mass systems prescribed |
 `SVD_comparisons.ipynb` : Shows comparison of custom solver and numpy results from part 1 of the project
 
 
