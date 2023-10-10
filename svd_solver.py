@@ -1,7 +1,25 @@
 import numpy as np
 
 def svd_solver(A: np.array):
-    
+    """
+    Perform Singular Value Decomposition (SVD) on the input matrix A.
+
+    Parameters:
+        A (numpy.ndarray): The input matrix for which SVD is performed.
+
+    Returns:
+        U (numpy.ndarray): Eigenvectors matrix of A*A^T.
+        sigma (numpy.ndarray): Diagonal matrix of singular values.
+        V (numpy.ndarray): Eigenvectors matrix of A^T*A.
+        cond_number (float): Condition number of the matrix.
+        inv_A (numpy.ndarray): Inverse of the input matrix A.
+
+    Raises:
+        ValueError: If at least one of the singular values is 0,
+                    indicating that the inverse of the matrix does not exist.
+    """
+
+
     tolerance = 1e-5
 
     cov_matrix_U = np.dot(A, A.T)
