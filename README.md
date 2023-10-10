@@ -70,3 +70,36 @@ Singular value matrix:
  [0.         0.         0.19806226]]
 The Stiffness Matrix has condition number: 16.393731622284225
 ```
+
+### Using the SVD solver
+
+In the event that you would like to use the SVD solver for some other case, the function parameters and returns are as follows:
+```
+Perform Singular Value Decomposition (SVD) on the input matrix A.
+
+    Parameters:
+        A (numpy.ndarray): The input matrix for which SVD is performed.
+
+    Returns:
+        U (numpy.ndarray): Eigenvectors matrix of A*A^T.
+        sigma (numpy.ndarray): Diagonal matrix of singular values.
+        V (numpy.ndarray): Eigenvectors matrix of A^T*A.
+        cond_number (float): Condition number of the matrix.
+        inv_A (numpy.ndarray): Inverse of the input matrix A.
+
+    Raises:
+        ValueError: If at least one of the singular values is 0,
+                    indicating that the inverse of the matrix does not exist.
+```
+
+
+### Results comparison
+
+All of the following are visible in the SVD_comparison.ipynb
+
+The following array was used for the comparison:
+```
+A = np.array([[5, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9],])
+```
